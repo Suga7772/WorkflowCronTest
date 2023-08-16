@@ -1,9 +1,7 @@
 name:  Github Sample showing Secret tokens
 
 on:
-    push:
-        branches:
-            - master
+    workflow_dispatch:
 
 jobs:
     secrets-in-github-actions:
