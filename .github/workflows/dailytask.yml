@@ -1,0 +1,21 @@
+name:  Github Sample showing Secret tokens
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    secrets-in-github-actions:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Echo with no setup on Token showing
+              run: |
+                echo "Github Token email is :"
+                echo  ${{ secrets.USER_EMAIL }}
+
+            - name: Echo Token on Screen with magic
+              run: |
+                  echo "Github Token email with magic is :"
+                  echo ${{ secrets.USER_EMAIL }} | sed 's/./& /g'
