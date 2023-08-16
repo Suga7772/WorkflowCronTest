@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
-import os 
 
 chrome_options = uc.ChromeOptions()
 
